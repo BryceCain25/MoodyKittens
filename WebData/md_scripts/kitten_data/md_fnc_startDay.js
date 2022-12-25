@@ -1,3 +1,0 @@
-function startDay() {
-    /* start day */
-};

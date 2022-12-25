@@ -1,4 +1,5 @@
 function setFontWeight() {
+    console.log("ITS WORKING");
     let textArray = [].slice.call(document.getElementsByClassName("md_text"));
     textArray.forEach((element) => {
         let weightValue = element.getAttribute("fontWeight");
@@ -9,4 +10,3 @@ function setFontWeight() {
         };
     });
 };
-setFontWeight();

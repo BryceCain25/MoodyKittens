@@ -1,0 +1,50 @@
+#MoodyKittens
+[SCRIPT LOADER]:
+    1) Create script loader for functions
+        a) script loader will load all global references and functions at the start of the webpage
+        
+[UI]:
+    1): Create toolbar under "Moody Kittens" header
+        a): create basic buttons. "Feed","Pet","Create Demon"
+        b): added text field form for name input for said Demon
+        c): (if you're feeling special) dock the toolbar to header, if scrolling becomes a necessity
+    2): Create kitten display instance
+        a): Potentially add row scaling for kitten, default to grid pattern L->R and have a max size given for row
+        b): make the damn thing pretty, rows with crappy default gray borders are your worst nightmare :)
+        c): status indicator for kitten is contained in row cell. Try placing it below kitten image before anything
+        d): if you're feeling fine animate kitten image (single frame) to represent visually cat status
+            1): if animation doesn't go as planned, then just have a plain readout. Could be represented as
+            Happiness: 0 , Intelligence: 0, Bellyfull: 0
+            or 
+            Dead, Unwell, Feeling Off, Neutral, Happy, Fuckin Amazin
+        e): empty foodbowl image is a placeholder image for styling, do something to it for extra brownie points
+        f): add status indicator for different times of day, this could potentially be represented as background color
+            changing but that may be too much work to try and accomedate color change with the entire page
+    3): BOOM! UI! DONEZO!
+[Functionality]:
+    1): Create automatic font weight changer: DONE!
+    
+    2): Create demon function
+        a): primarily consists of initializing defautl/basic variables and characteristics of demon cat
+        b): after initialization object instance of cat should be able to act indepdently of other instances
+        c): store reference and any related data to local storage JSON FILE NEEDED <---- 
+        MSDN DOC(https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage)
+        StackOverflow Sample(https://stackoverflow.com/questions/3357553/how-do-i-store-an-array-in-localstorage)
+        d): kittens status should be affected by isolated to itself, and be affected by day cylce and time which is globally ran
+            Example flow:
+            WEBPAGE->
+                Day Cycle Timer->
+                Kitten->
+                Kitten->
+                Kitten->
+                Kitten->
+        e): dispose of the body
+            a): delete references to cats and contained values. remove from local storage. Alive/Dead indication should be declared and updated in real time
+        f): time should affect how long cats should go before eating again. Cats feeding times are independent of one another.
+            it's important to make a time scale for this. Time scale cannot be adjusted to a weird value with a small number of kittens
+            example:
+            2 Kittens with a time scale of 5x (5 times of the speed time)
+            (this is where the difficulty spike comes from, the more cats you have but wish to speed up time it becomes quickly CHAOS!!)
+
+            Fuck bitches get money!
+            done!

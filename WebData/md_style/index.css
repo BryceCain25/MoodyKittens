@@ -11,12 +11,11 @@ body {background-color:#333333;}
 }
 .md_text.h_shadow {text-shadow:2px 2px #757575}
 /* #endregion mdText */
-/* #region mdButtons */
 
-/* #endregion mdButtons */
 /* #region imageStuff */
 #foodbowl{
     width:200px;
     height:200px;
 }
 /* #endregion imageStuff */
+
